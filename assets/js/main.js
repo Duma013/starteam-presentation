@@ -76,17 +76,25 @@ function initNavigation() {
   sections.forEach(section => observer.observe(section));
 }
 
-/* === Scroll Effects (AOS-like fallback + enhancements) === */
+/* === Reveal on Scroll (custom IntersectionObserver, replaces AOS) === */
 function initScrollEffects() {
-  // AOS initialization
-  if (typeof AOS !== 'undefined') {
-    AOS.init({
-      duration: 700,
-      offset: 80,
-      once: true,
-      easing: 'ease-out-cubic'
+  const reveals = document.querySelectorAll('.reveal');
+  if (!reveals.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
     });
-  }
+  }, {
+    root: null,
+    rootMargin: '0px 0px -60px 0px',
+    threshold: 0.05
+  });
+
+  reveals.forEach(el => observer.observe(el));
 }
 
 /* === Animated Counters === */
