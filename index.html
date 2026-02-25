@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StarTeam.pro — Software Empresarial para Starlite Group</title>
+  <meta name="description" content="Plataforma integral que conecta todos los departamentos de Starlite Group. 72 módulos, 365+ endpoints, 1,104 tests.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">StarTeam<span class="dot"></span>pro</a>
+      <ul class="nav-links">
+        <li><a href="#por-que">Por qué</a></li>
+        <li><a href="#modulos">Módulos</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#arquitectura">Arquitectura</a></li>
+        <li><a href="#api">API</a></li>
+        <li><a href="#integraciones">Integraciones</a></li>
+        <li><a href="#tech">Tech Stack</a></li>
+        <li><a href="#datos">Datos</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Menú">
+        <i data-lucide="menu" style="width:24px;height:24px;"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1 class="hero-logo">StarTeam.pro</h1>
+      <p class="hero-tagline">La plataforma que conecta todos los departamentos de Starlite Group</p>
+      <p class="hero-sub">Software empresarial integral desarrollado a medida. 39 sprints. Un solo desarrollador.</p>
+      <div class="hero-counters">
+        <div class="hero-counter">
+          <div class="number"><span data-count="72" data-format>0</span></div>
+          <div class="label">Módulos</div>
+        </div>
+        <div class="hero-counter">
+          <div class="number"><span data-count="50" data-format>0</span><span class="plus">+</span></div>
+          <div class="label">Páginas</div>
+        </div>
+        <div class="hero-counter">
+          <div class="number"><span data-count="365" data-format>0</span><span class="plus">+</span></div>
+          <div class="label">Endpoints</div>
+        </div>
+        <div class="hero-counter">
+          <div class="number"><span data-count="1104" data-format>0</span></div>
+          <div class="label">Tests</div>
+        </div>
+      </div>
+    </div>
+    <a href="#por-que" class="hero-scroll">
+      <span>Descubre más</span>
+      <div class="scroll-line"></div>
+      <i data-lucide="chevron-down" style="width:16px;height:16px;"></i>
+    </a>
+  </section>
+
+  <!-- ============ POR QUÉ STARTEAM ============ -->
+  <section id="por-que">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="zap" style="width:14px;height:14px;"></i> Ventajas</div>
+      <h2 class="section-title">Por qué <span class="gold">StarTeam</span></h2>
+      <p class="section-subtitle">De Excels desconectados a una plataforma unificada que transforma la manera de trabajar.</p>
+    </div>
+    <div class="advantage-grid">
+
+      <!-- Card A: Trabajo en equipo real -->
+      <div class="advantage-card" data-aos="fade-up">
+        <div class="advantage-icon"><i data-lucide="users" style="width:24px;height:24px;"></i></div>
+        <h3 class="advantage-title">Trabajo en equipo real</h3>
+        <div class="advantage-text">
+          <strong style="color:var(--color-danger);">Antes:</strong> cada departamento con su Excel, datos duplicados, versiones diferentes, 0 visibilidad cruzada.<br><br>
+          <strong style="color:var(--color-success);">Ahora:</strong> todos trabajan sobre la misma base de datos, cambios en tiempo real, dashboards compartidos.
+        </div>
+        <div class="advantage-example">
+          <strong>Ejemplo:</strong> Booking cierra un artista → Producción ve los requisitos → Ticketing abre la venta → Marketing lanza la campaña → Tesorería programa los pagos. Todo conectado.
+        </div>
+      </div>
+
+      <!-- Card B: Base de datos centralizada -->
+      <div class="advantage-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="advantage-icon"><i data-lucide="database" style="width:24px;height:24px;"></i></div>
+        <h3 class="advantage-title">Base de datos centralizada vs Excels</h3>
+        <div class="advantage-text">
+          Una única fuente de verdad (PostgreSQL) con <strong style="color:var(--color-gold);">134 modelos</strong> vs 14 Excels desconectados. Sin duplicación de datos, sin errores de copy-paste entre departamentos.<br><br>
+          Búsquedas instantáneas, filtros cruzados, exportaciones automáticas. Auditoría completa: quién cambió qué, cuándo, por qué.
+        </div>
+      </div>
+
+      <!-- Card C: Histórico para mediciones -->
+      <div class="advantage-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="advantage-icon"><i data-lucide="bar-chart-3" style="width:24px;height:24px;"></i></div>
+        <h3 class="advantage-title">Histórico para mediciones reales</h3>
+        <div class="advantage-text">
+          548 conciertos históricos (2012-2025) para análisis de rentabilidad real. 20,915 registros F&B (42.89M EUR, 13 ediciones) para benchmarks. 644 cierres de booking para negociación basada en datos.
+        </div>
+        <div class="advantage-example">
+          <strong>BCG Matrix, ABC Pareto, CRM enriquecido</strong> — decisiones con datos, no con intuición. Simulador booking: "si contratamos a este artista a este caché, ¿cuál es el ROI esperado según histórico?"
+        </div>
+      </div>
+
+      <!-- Card D: Seguridad -->
+      <div class="advantage-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="advantage-icon"><i data-lucide="shield-check" style="width:24px;height:24px;"></i></div>
+        <h3 class="advantage-title">Seguridad del software</h3>
+        <div class="advantage-text">
+          OWASP Top 10 protegido: SQL injection, XSS, CSRF, path traversal — todo testeado. 5 roles con permisos granulares (PROPIEDAD > ADMIN > DIRECCIÓN > MANAGER > USER). 2FA obligatorio por email en login.<br><br>
+          JWT tokens con refresh, sesiones seguras. Datos sensibles (salarios, DNI, IBAN) excluidos de las herramientas IA. Soft deletes: nada se borra realmente, todo es recuperable. <strong style="color:var(--color-gold);">1,104 tests automatizados</strong> verifican que todo funciona tras cada cambio.
+        </div>
+      </div>
+
+      <!-- Card E: Comunicación -->
+      <div class="advantage-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="advantage-icon"><i data-lucide="message-square" style="width:24px;height:24px;"></i></div>
+        <h3 class="advantage-title">Comunicación entre departamentos</h3>
+        <div class="advantage-text">
+          Sistema de Solicitudes unificado: Diseño, Films, Logística, Catálogo — todo en un buzón. Notificaciones in-app y por email cuando algo cambia. Dashboard Ejecutivo consolida datos de TODOS los departamentos en una vista.
+        </div>
+        <div class="advantage-example">
+          <strong>IA (Clau)</strong> responde preguntas cruzando datos de cualquier módulo según tu rol. <strong>Star Contigo:</strong> atención al cliente omnicanal (voz, WhatsApp, web) conectada al mismo backend.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ MÓDULOS ============ -->
+  <section id="modulos" class="modules-section">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="layers" style="width:14px;height:14px;"></i> Plataforma</div>
+      <h2 class="section-title"><span class="gold">72</span> Módulos</h2>
+      <p class="section-subtitle">Cada departamento tiene sus herramientas. Todos comparten la misma base de datos.</p>
+    </div>
+
+    <!-- Filters -->
+    <div class="module-filters" data-aos="fade-up">
+      <button class="module-filter-btn active" data-filter="all">Todos</button>
+      <button class="module-filter-btn" data-filter="financiero">Financiero</button>
+      <button class="module-filter-btn" data-filter="contabilidad">Contabilidad</button>
+      <button class="module-filter-btn" data-filter="rrhh">RRHH</button>
+      <button class="module-filter-btn" data-filter="ticketing">Ticketing</button>
+      <button class="module-filter-btn" data-filter="booking">Booking</button>
+      <button class="module-filter-btn" data-filter="omnes">Omnes</button>
+      <button class="module-filter-btn" data-filter="marketing">Marketing</button>
+      <button class="module-filter-btn" data-filter="fb">F&B</button>
+      <button class="module-filter-btn" data-filter="patrocinios">Patrocinios</button>
+      <button class="module-filter-btn" data-filter="operaciones">Operaciones</button>
+      <button class="module-filter-btn" data-filter="films">Films</button>
+      <button class="module-filter-btn" data-filter="cto">CTO</button>
+      <button class="module-filter-btn" data-filter="direccion">Dirección</button>
+      <button class="module-filter-btn" data-filter="propiedad">Propiedad</button>
+      <button class="module-filter-btn" data-filter="ia">IA</button>
+      <button class="module-filter-btn" data-filter="star-contigo">Star Contigo</button>
+      <button class="module-filter-btn" data-filter="solicitudes">Solicitudes</button>
+      <button class="module-filter-btn" data-filter="admin">Admin</button>
+    </div>
+
+    <!-- Financiero -->
+    <div class="module-group" data-group="financiero" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="banknote" style="width:18px;height:18px;"></i> Financiero <span class="count">5 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="receipt" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Gastos</div></div>
+          </div>
+          <div class="module-card-desc">Compromisos con workflow de aprobación multinivel.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">7</span> endpoints</span>
+            <span class="module-stat"><span class="val">9</span> estados workflow</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="trending-up" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Ingresos</div></div>
+          </div>
+          <div class="module-card-desc">Líneas de ingreso por edición.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">7</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="building-2" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Proveedores</div></div>
+          </div>
+          <div class="module-card-desc">Directorio con homologación de proveedores.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">210+</span> proveedores</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="piggy-bank" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Presupuestos</div></div>
+          </div>
+          <div class="module-card-desc">Control presupuestario por departamento.</div>
+          <div class="module-card-stats">
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="download" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Exportaciones</div></div>
+          </div>
+          <div class="module-card-desc">Excel/PDF automáticos para reportes financieros.</div>
+          <div class="module-card-stats">
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contabilidad -->
+    <div class="module-group" data-group="contabilidad" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="calculator" style="width:18px;height:18px;"></i> Contabilidad <span class="count">8 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="book-open" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Apuntes BD4</div></div>
+          </div>
+          <div class="module-card-desc">Asientos contables IFEMA importados.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">31.872</span> asientos</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="book-marked" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Plan Contable PGC</div></div>
+          </div>
+          <div class="module-card-desc">Diccionario con 273 tablas del PGC.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">273</span> tablas</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="wallet" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Cash Flow</div></div>
+          </div>
+          <div class="module-card-desc">12 bancos, proyecciones financieras.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">19</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="landmark" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Tesorería</div></div>
+          </div>
+          <div class="module-card-desc">Grid semanal, sync Stripe/Vivenu.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">8</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="layout-dashboard" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">IFEMA Dashboard</div></div>
+          </div>
+          <div class="module-card-desc">P&L departamental, 18 departamentos.</div>
+          <div class="module-card-stats">
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="file-text" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Estados Financieros</div></div>
+          </div>
+          <div class="module-card-desc">Balance y cuenta de resultados.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="trending-up" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Evolución</div></div>
+          </div>
+          <div class="module-card-desc">Análisis temporal de datos contables.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="grid-3x3" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Matriz/Ranking</div></div>
+          </div>
+          <div class="module-card-desc">Análisis cruzado de datos financieros.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RRHH -->
+    <div class="module-group" data-group="rrhh" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="user-check" style="width:18px;height:18px;"></i> RRHH <span class="count">6 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="clock" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Fichajes</div></div>
+          </div>
+          <div class="module-card-desc">Reloj digital, PDF legal RD 8/2019.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">30+</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="calendar-off" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Ausencias</div></div>
+          </div>
+          <div class="module-card-desc">Calendario, solicitudes, balances.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">14</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="file-signature" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Contratos</div></div>
+          </div>
+          <div class="module-card-desc">Gestión documental de empleados.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="user" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Perfiles</div></div>
+          </div>
+          <div class="module-card-desc">Datos sensibles protegidos por rol.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="calendar-clock" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Horarios</div></div>
+          </div>
+          <div class="module-card-desc">Planificación de turnos.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="file-down" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Informes</div></div>
+          </div>
+          <div class="module-card-desc">Export PDF/Excel cumplimiento legal.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ticketing -->
+    <div class="module-group" data-group="ticketing" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="ticket" style="width:18px;height:18px;"></i> Ticketing <span class="count">4 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="ticket" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Vivenu</div></div>
+          </div>
+          <div class="module-card-desc">Proxy API completo, eventos, transacciones.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">22</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="scan-line" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Ticketmaster</div></div>
+          </div>
+          <div class="module-card-desc">3,173 transacciones sync, 23 eventos.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">12</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="tags" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Precios</div></div>
+          </div>
+          <div class="module-card-desc">Override masivo, tablas dinámicas de precios.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="scan" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Accesos</div></div>
+          </div>
+          <div class="module-card-desc">Validación/invalidación de tickets.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Booking -->
+    <div class="module-group" data-group="booking" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="music" style="width:18px;height:18px;"></i> Booking <span class="count">3 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="handshake" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Cierres</div></div>
+          </div>
+          <div class="module-card-desc">644 registros históricos, 399 artistas.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">8</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="mic-2" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Artistas Detalle</div></div>
+          </div>
+          <div class="module-card-desc">546 artistas con datos cualitativos.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="flask-conical" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Simulador</div></div>
+          </div>
+          <div class="module-card-desc">What-If, Benchmarks, Análisis de sensibilidad (P8).</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Omnes -->
+    <div class="module-group" data-group="omnes" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="globe" style="width:18px;height:18px;"></i> Omnes <span class="count">4 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="bar-chart-2" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Analytics</div></div>
+          </div>
+          <div class="module-card-desc">548 conciertos, 520 Marbella + 28 Madrid.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="grid-2x2" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">BCG Matrix</div></div>
+          </div>
+          <div class="module-card-desc">4 cuadrantes (Stars, Cash Cows, Questions, Dogs).</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="signal" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">ABC Pareto</div></div>
+          </div>
+          <div class="module-card-desc">Análisis de concentración.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="contact" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">CRM</div></div>
+          </div>
+          <div class="module-card-desc">352+ artistas con historial completo.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marketing -->
+    <div class="module-group" data-group="marketing" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="megaphone" style="width:18px;height:18px;"></i> Marketing <span class="count">6 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="calendar" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">RRSS Calendario</div></div>
+          </div>
+          <div class="module-card-desc">Planificación social media.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="newspaper" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Prensa</div></div>
+          </div>
+          <div class="module-card-desc">21 medios gestionados.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">13</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="file-text" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Bios Artistas</div></div>
+          </div>
+          <div class="module-card-desc">13 artistas, export PDF/DOCX.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">8</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="palette" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Línea Gráfica</div></div>
+          </div>
+          <div class="module-card-desc">Auto-PDF, 5 estados workflow.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">11</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="image" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Ticketeras</div></div>
+          </div>
+          <div class="module-card-desc">Composición automática 83+ imágenes/artista (Sharp).</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="contact" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">CRM Artistas</div></div>
+          </div>
+          <div class="module-card-desc">352+ artistas, 3 tabs.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- F&B -->
+    <div class="module-group" data-group="fb" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="utensils" style="width:18px;height:18px;"></i> F&B <span class="count">2 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="bar-chart-3" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Dashboard</div></div>
+          </div>
+          <div class="module-card-desc">20,915 registros, 42.89M EUR, 13 ediciones.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="trending-up" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Evolución</div></div>
+          </div>
+          <div class="module-card-desc">Análisis temporal 2013-2025.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patrocinios -->
+    <div class="module-group" data-group="patrocinios" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="gem" style="width:18px;height:18px;"></i> Patrocinios <span class="count">2 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="crown" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Palcos</div></div>
+          </div>
+          <div class="module-card-desc">5 tabs (Ingresos/Ventas/Emails/Rebook/CRM). 152 marcas, 705 deals.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="history" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Histórico</div></div>
+          </div>
+          <div class="module-card-desc">2010-2024, 399 leads registrados.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Operaciones -->
+    <div class="module-group" data-group="operaciones" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="hard-hat" style="width:18px;height:18px;"></i> Operaciones <span class="count">4 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="wrench" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Producción</div></div>
+          </div>
+          <div class="module-card-desc">6 tipos de servicios, 4 tabs, contratos.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">11</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="truck" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Logística</div></div>
+          </div>
+          <div class="module-card-desc">Solicitudes redirigidas al sistema unificado.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="car" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Vehículos</div></div>
+          </div>
+          <div class="module-card-desc">Flota, asignaciones, gastos.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="map-pin" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Espacios/Señalización</div></div>
+          </div>
+          <div class="module-card-desc">Gestión del recinto.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Films -->
+    <div class="module-group" data-group="films" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="video" style="width:18px;height:18px;"></i> Films <span class="count">2 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="package" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Almacén</div></div>
+          </div>
+          <div class="module-card-desc">1,096 equipos, 21 secciones, 112 marcas, ~1M EUR.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">17</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="container" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Camiones</div></div>
+          </div>
+          <div class="module-card-desc">Inventario + cargas, visualización 3D (React Three Fiber).</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">14</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTO -->
+    <div class="module-group" data-group="cto" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="cpu" style="width:18px;height:18px;"></i> CTO <span class="count">1 módulo</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="monitor" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Dispositivos</div></div>
+          </div>
+          <div class="module-card-desc">~90 equipos tech, 3 tabs.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">13</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dirección -->
+    <div class="module-group" data-group="direccion" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="layout-dashboard" style="width:18px;height:18px;"></i> Dirección <span class="count">1 módulo</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="gauge" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Dashboard Ejecutivo PINTARON</div></div>
+          </div>
+          <div class="module-card-desc">4 tabs, auto-refresh 5min, semáforos.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">5</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Propiedad -->
+    <div class="module-group" data-group="propiedad" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="crown" style="width:18px;height:18px;"></i> Propiedad <span class="count">5 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="eye" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Dashboard</div></div>
+          </div>
+          <div class="module-card-desc">Vista exclusiva nivel 0.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="mic-2" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Artistas</div></div>
+          </div>
+          <div class="module-card-desc">35 artistas, inline editing.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="wallet" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Tesorería</div></div>
+          </div>
+          <div class="module-card-desc">4 bloques, 44 entries.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="shopping-cart" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Ventas</div></div>
+          </div>
+          <div class="module-card-desc">Grid 7 días real-time.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="hotel" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Hoteles</div></div>
+          </div>
+          <div class="module-card-desc">2,493 reservas (2018-2023).</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- IA -->
+    <div class="module-group" data-group="ia" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="brain" style="width:18px;height:18px;"></i> IA <span class="count">3 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="bot" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Clau</div></div>
+          </div>
+          <div class="module-card-desc">Asistente IA con 20 tools, Claude API, acceso granular por rol.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="scan-eye" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Visión</div></div>
+          </div>
+          <div class="module-card-desc">Análisis de imágenes (chat-with-image).</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="settings" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Admin IA</div></div>
+          </div>
+          <div class="module-card-desc">Consumo por departamento, KPIs, configuración.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Star Contigo -->
+    <div class="module-group" data-group="star-contigo" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="headphones" style="width:18px;height:18px;"></i> Star Contigo <span class="count">1 módulo</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="headphones" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Atención al cliente omnicanal</div></div>
+          </div>
+          <div class="module-card-desc">Voz (Vapi.ai), WhatsApp (Twilio), web chat. Dashboard, Sesiones, Reservas, Ventas, FAQ, Configuración. Conectado al backend StarTeam.</div>
+          <div class="module-card-stats"><span class="module-badge badge-new">Nuevo</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Solicitudes -->
+    <div class="module-group" data-group="solicitudes" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="inbox" style="width:18px;height:18px;"></i> Solicitudes <span class="count">1 módulo</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="inbox" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Unificado 4-en-1</div></div>
+          </div>
+          <div class="module-card-desc">Diseño, Films, Logística, Catálogo. Workflow: crear, asignar, presupuestar, aprobar, entregar.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">11</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin -->
+    <div class="module-group" data-group="admin" data-aos="fade-up">
+      <div class="module-group-title"><i data-lucide="settings" style="width:18px;height:18px;"></i> Admin <span class="count">2 módulos</span></div>
+      <div class="module-grid">
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="users" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Usuarios</div></div>
+          </div>
+          <div class="module-card-desc">CRUD completo, roles, departamentos.</div>
+          <div class="module-card-stats">
+            <span class="module-stat"><span class="val">6</span> endpoints</span>
+            <span class="module-badge badge-live">Live</span>
+          </div>
+        </div>
+        <div class="module-card">
+          <div class="module-card-header">
+            <div class="module-card-icon"><i data-lucide="network" style="width:18px;height:18px;"></i></div>
+            <div><div class="module-card-title">Organigrama</div></div>
+          </div>
+          <div class="module-card-desc">Visualización jerárquica de la organización.</div>
+          <div class="module-card-stats"><span class="module-badge badge-live">Live</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA DE MOCKUPS ============ -->
+  <section id="galeria">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="monitor" style="width:14px;height:14px;"></i> Interfaz</div>
+      <h2 class="section-title">Galería de <span class="gold">pantallas</span></h2>
+      <p class="section-subtitle">Simulaciones de las interfaces reales del sistema.</p>
+    </div>
+    <div class="mockups-grid">
+
+      <!-- Mockup 1: Login 2FA -->
+      <div class="mockup-window" data-aos="fade-up">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/login</div>
+        </div>
+        <div class="mockup-body mock-login">
+          <div class="mock-login-logo">StarTeam.pro</div>
+          <div class="mock-input">email@starlite.es</div>
+          <div class="mock-input" style="color:var(--color-border);">*************</div>
+          <div class="mock-btn">Iniciar sesión</div>
+          <div style="margin-top:1rem;text-align:center;">
+            <div style="font-size:0.7rem;color:var(--color-text-dim);margin-bottom:0.5rem;">Código enviado a tu email</div>
+            <div class="mock-2fa-code">
+              <div class="mock-2fa-digit">4</div>
+              <div class="mock-2fa-digit">8</div>
+              <div class="mock-2fa-digit">2</div>
+              <div class="mock-2fa-digit">9</div>
+              <div class="mock-2fa-digit">1</div>
+              <div class="mock-2fa-digit">7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup 2: Dashboard KPIs -->
+      <div class="mockup-window" data-aos="fade-up" data-aos-delay="100">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/dashboard</div>
+        </div>
+        <div class="mockup-body mock-dashboard">
+          <div class="mock-kpis">
+            <div class="mock-kpi"><div class="mock-kpi-value">2.4M</div><div class="mock-kpi-label">Gastos</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">5.1M</div><div class="mock-kpi-label">Ingresos</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">48</div><div class="mock-kpi-label">Empleados</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">12.5K</div><div class="mock-kpi-label">Tickets</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">546</div><div class="mock-kpi-label">Artistas</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">210</div><div class="mock-kpi-label">Proveedores</div></div>
+          </div>
+          <div class="mock-chart-area">
+            <div class="mock-bar" style="height:45%;"></div>
+            <div class="mock-bar" style="height:60%;"></div>
+            <div class="mock-bar" style="height:35%;"></div>
+            <div class="mock-bar" style="height:80%;"></div>
+            <div class="mock-bar" style="height:55%;"></div>
+            <div class="mock-bar" style="height:90%;"></div>
+            <div class="mock-bar" style="height:70%;"></div>
+            <div class="mock-bar" style="height:50%;"></div>
+            <div class="mock-bar" style="height:85%;"></div>
+            <div class="mock-bar" style="height:65%;"></div>
+            <div class="mock-bar" style="height:75%;"></div>
+            <div class="mock-bar" style="height:95%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup 3: Gastos (tabla) -->
+      <div class="mockup-window" data-aos="fade-up" data-aos-delay="200">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/gastos</div>
+        </div>
+        <div class="mockup-body">
+          <div class="mock-table">
+            <div class="mock-table-header">
+              <span>Concepto</span><span>Importe</span><span>Estado</span><span>Depto.</span>
+            </div>
+            <div class="mock-table-row">
+              <span>Sonido Main Stage</span><span style="color:var(--color-text);">45,200</span>
+              <span><span class="mock-workflow-badge mock-badge-approved">Aprobado</span></span><span>Producción</span>
+            </div>
+            <div class="mock-table-row">
+              <span>Catering VIP</span><span style="color:var(--color-text);">12,800</span>
+              <span><span class="mock-workflow-badge mock-badge-pending">Pendiente</span></span><span>F&B</span>
+            </div>
+            <div class="mock-table-row">
+              <span>Campaña RRSS</span><span style="color:var(--color-text);">8,500</span>
+              <span><span class="mock-workflow-badge mock-badge-review">En revisión</span></span><span>Marketing</span>
+            </div>
+            <div class="mock-table-row">
+              <span>Seguridad</span><span style="color:var(--color-text);">22,100</span>
+              <span><span class="mock-workflow-badge mock-badge-approved">Aprobado</span></span><span>Operaciones</span>
+            </div>
+            <div class="mock-table-row">
+              <span>Decoración Palcos</span><span style="color:var(--color-text);">6,750</span>
+              <span><span class="mock-workflow-badge mock-badge-pending">Pendiente</span></span><span>Patrocinios</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup 4: Ticketing Dashboard -->
+      <div class="mockup-window" data-aos="fade-up" data-aos-delay="300">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/ticketing</div>
+        </div>
+        <div class="mockup-body mock-dashboard">
+          <div class="mock-kpis">
+            <div class="mock-kpi"><div class="mock-kpi-value">1.8M</div><div class="mock-kpi-label">Revenue</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">12.5K</div><div class="mock-kpi-label">Tickets vendidos</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">23</div><div class="mock-kpi-label">Eventos</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">3</div><div class="mock-kpi-label">Canales</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">68%</div><div class="mock-kpi-label">Ocupación</div></div>
+            <div class="mock-kpi"><div class="mock-kpi-value">144</div><div class="mock-kpi-label">Ticket medio</div></div>
+          </div>
+          <div class="mock-chart-area">
+            <div class="mock-bar" style="height:30%;"></div>
+            <div class="mock-bar" style="height:45%;"></div>
+            <div class="mock-bar" style="height:55%;"></div>
+            <div class="mock-bar" style="height:70%;"></div>
+            <div class="mock-bar" style="height:85%;"></div>
+            <div class="mock-bar" style="height:95%;"></div>
+            <div class="mock-bar" style="height:80%;"></div>
+            <div class="mock-bar" style="height:60%;"></div>
+            <div class="mock-bar" style="height:40%;"></div>
+            <div class="mock-bar" style="height:50%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup 5: RRHH Fichajes -->
+      <div class="mockup-window" data-aos="fade-up">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/rrhh/fichajes</div>
+        </div>
+        <div class="mockup-body mock-fichajes">
+          <div class="mock-clock">09:15</div>
+          <div class="mock-clock-status">Fichado</div>
+          <div class="mock-hours-grid">
+            <div class="mock-hour-item"><div class="val">6h 30m</div><div class="lbl">Hoy</div></div>
+            <div class="mock-hour-item"><div class="val">32h</div><div class="lbl">Semana</div></div>
+            <div class="mock-hour-item"><div class="val">148h</div><div class="lbl">Mes</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup 6: BCG Matrix -->
+      <div class="mockup-window" data-aos="fade-up" data-aos-delay="100">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/omnes/bcg</div>
+        </div>
+        <div class="mockup-body">
+          <div class="mock-bcg">
+            <div class="mock-bcg-quad stars">
+              <div class="mock-bcg-quad-title">Stars</div>
+              <div class="mock-bcg-quad-items">Aitana<br>Quevedo<br>Duki</div>
+            </div>
+            <div class="mock-bcg-quad questions">
+              <div class="mock-bcg-quad-title">Question Marks</div>
+              <div class="mock-bcg-quad-items">Alvaro de Luna<br>Nicki Nicole</div>
+            </div>
+            <div class="mock-bcg-quad cows">
+              <div class="mock-bcg-quad-title">Cash Cows</div>
+              <div class="mock-bcg-quad-items">David Guetta<br>Andrea Bocelli<br>Ricky Martin</div>
+            </div>
+            <div class="mock-bcg-quad dogs">
+              <div class="mock-bcg-quad-title">Dogs</div>
+              <div class="mock-bcg-quad-items">DJ Set B<br>Tributo Act</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mockup 7: Executive Dashboard -->
+      <div class="mockup-window" data-aos="fade-up" data-aos-delay="200">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/executive</div>
+        </div>
+        <div class="mockup-body mock-exec">
+          <div class="mock-exec-row"><div class="mock-semaforo green"></div><div class="mock-exec-label">Ticketing</div><div class="mock-exec-val">1.8M</div></div>
+          <div class="mock-exec-row"><div class="mock-semaforo green"></div><div class="mock-exec-label">F&B</div><div class="mock-exec-val">420K</div></div>
+          <div class="mock-exec-row"><div class="mock-semaforo yellow"></div><div class="mock-exec-label">Booking</div><div class="mock-exec-val">85%</div></div>
+          <div class="mock-exec-row"><div class="mock-semaforo green"></div><div class="mock-exec-label">RRHH</div><div class="mock-exec-val">48</div></div>
+          <div class="mock-exec-row"><div class="mock-semaforo yellow"></div><div class="mock-exec-label">Marketing</div><div class="mock-exec-val">62%</div></div>
+          <div class="mock-exec-row"><div class="mock-semaforo green"></div><div class="mock-exec-label">Operaciones</div><div class="mock-exec-val">OK</div></div>
+          <div class="mock-exec-row"><div class="mock-semaforo red"></div><div class="mock-exec-label">Patrocinios</div><div class="mock-exec-val">340K</div></div>
+          <div class="mock-exec-row"><div class="mock-semaforo green"></div><div class="mock-exec-label">Cash Flow</div><div class="mock-exec-val">+1.2M</div></div>
+        </div>
+      </div>
+
+      <!-- Mockup 8: IA Chat (Clau) -->
+      <div class="mockup-window" data-aos="fade-up" data-aos-delay="300">
+        <div class="mockup-chrome">
+          <div class="mockup-dots"><span></span><span></span><span></span></div>
+          <div class="mockup-url">starteam.pro/ia/chat</div>
+        </div>
+        <div class="mockup-body mock-chat">
+          <div class="mock-chat-msg mock-chat-user">¿Cuántos tickets se han vendido esta semana?</div>
+          <div class="mock-chat-msg mock-chat-ai">
+            <div class="tool-badge">ticketing</div>
+            Esta semana se han vendido <strong style="color:var(--color-gold);">2,847 tickets</strong> en 5 eventos activos. El revenue acumulado es de <strong style="color:var(--color-gold);">412,315 EUR</strong>. El evento con más ventas es "Aitana - Main Stage" con 892 tickets.
+          </div>
+          <div class="mock-chat-msg mock-chat-user">¿Y comparado con la semana pasada?</div>
+          <div class="mock-chat-msg mock-chat-ai">
+            <div class="tool-badge">ticketing</div>
+            La semana pasada se vendieron 2,103 tickets (+35.4% esta semana). El revenue subió un 28.7%. La tendencia es positiva.
+          </div>
+          <div class="mock-chat-input">
+            <input type="text" value="Escribe tu pregunta..." disabled>
+            <button disabled>Enviar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ ARQUITECTURA ============ -->
+  <section id="arquitectura">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="server" style="width:14px;height:14px;"></i> Infraestructura</div>
+      <h2 class="section-title">Arquitectura <span class="gold">técnica</span></h2>
+      <p class="section-subtitle">Stack moderno, contenedores Docker, proxy inverso, integraciones externas.</p>
+    </div>
+    <div class="arch-container" data-aos="fade-up">
+      <div class="arch-flow">
+        <!-- Row 1: Browser -->
+        <div class="arch-row">
+          <div class="arch-node"><div class="arch-node-label"><i data-lucide="globe" style="width:16px;height:16px;display:inline;vertical-align:middle;margin-right:4px;"></i> Browser</div><div class="arch-node-sub">Usuario final</div></div>
+        </div>
+        <div class="arch-arrow-down"><i data-lucide="chevron-down" style="width:20px;height:20px;"></i></div>
+        <!-- Row 2: Cloudflare -->
+        <div class="arch-row">
+          <div class="arch-node gold"><div class="arch-node-label"><i data-lucide="shield" style="width:16px;height:16px;display:inline;vertical-align:middle;margin-right:4px;"></i> Cloudflare</div><div class="arch-node-sub">CDN + WAF + SSL</div></div>
+        </div>
+        <div class="arch-arrow-down"><i data-lucide="chevron-down" style="width:20px;height:20px;"></i></div>
+        <!-- Row 3: Nginx -->
+        <div class="arch-row">
+          <div class="arch-node"><div class="arch-node-label"><i data-lucide="server" style="width:16px;height:16px;display:inline;vertical-align:middle;margin-right:4px;"></i> Nginx</div><div class="arch-node-sub">Reverse Proxy</div></div>
+        </div>
+        <div class="arch-arrow-down"><i data-lucide="chevron-down" style="width:20px;height:20px;"></i></div>
+        <!-- Row 4: Docker Compose box -->
+        <div class="arch-docker-box">
+          <div class="arch-docker-label"><i data-lucide="container" style="width:12px;height:12px;display:inline;vertical-align:middle;margin-right:4px;"></i> Docker Compose</div>
+          <div class="arch-row" style="margin-bottom:1rem;">
+            <div class="arch-node gold"><div class="arch-node-label">Next.js</div><div class="arch-node-sub">:3000 — Frontend</div></div>
+            <div class="arch-arrow"><i data-lucide="arrow-right" style="width:20px;height:20px;"></i></div>
+            <div class="arch-node gold"><div class="arch-node-label">NestJS</div><div class="arch-node-sub">:4000 — Backend API</div></div>
+          </div>
+          <div class="arch-arrow-down"><i data-lucide="chevron-down" style="width:20px;height:20px;"></i></div>
+          <div class="arch-row" style="margin-top:1rem;">
+            <div class="arch-node"><div class="arch-node-label"><i data-lucide="database" style="width:16px;height:16px;display:inline;vertical-align:middle;margin-right:4px;"></i> PostgreSQL 16</div><div class="arch-node-sub">134 modelos</div></div>
+            <div class="arch-arrow"><i data-lucide="arrow-left-right" style="width:20px;height:20px;"></i></div>
+            <div class="arch-node"><div class="arch-node-label">Prisma 5</div><div class="arch-node-sub">ORM + Migraciones</div></div>
+          </div>
+        </div>
+        <!-- Row 5: Integraciones externas -->
+        <div style="margin-top:1.5rem;text-align:center;">
+          <div style="font-size:0.75rem;color:var(--color-text-dim);margin-bottom:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;">Integraciones externas</div>
+          <div class="arch-row">
+            <div class="arch-node"><div class="arch-node-label">Claude API</div><div class="arch-node-sub">IA</div></div>
+            <div class="arch-node"><div class="arch-node-label">Vivenu</div><div class="arch-node-sub">Ticketing</div></div>
+            <div class="arch-node"><div class="arch-node-label">Stripe</div><div class="arch-node-sub">Pagos</div></div>
+            <div class="arch-node"><div class="arch-node-label">Ticketmaster</div><div class="arch-node-sub">Sync</div></div>
+          </div>
+          <div class="arch-row" style="margin-top:0.75rem;">
+            <div class="arch-node"><div class="arch-node-label">BD4/TETRA</div><div class="arch-node-sub">Contabilidad</div></div>
+            <div class="arch-node"><div class="arch-node-label">Twilio</div><div class="arch-node-sub">SMS/WhatsApp</div></div>
+            <div class="arch-node"><div class="arch-node-label">Vapi.ai</div><div class="arch-node-sub">Voz IA</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAPA DE API ============ -->
+  <section id="api">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="code-2" style="width:14px;height:14px;"></i> API REST</div>
+      <h2 class="section-title"><span class="gold">365+</span> Endpoints</h2>
+      <p class="section-subtitle">API RESTful completa con autenticación JWT, validación, paginación y control de roles.</p>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Auth <span class="endpoint-count">9 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/auth/login</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/auth/verify-2fa</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/auth/resend-code</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/auth/refresh</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Users <span class="endpoint-count">6 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/users</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/users</span></div>
+          <div class="api-endpoint"><span class="api-method method-patch">PATCH</span><span class="api-path">/users/:id</span></div>
+          <div class="api-endpoint"><span class="api-method method-delete">DEL</span><span class="api-path">/users/:id</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Gastos / Commitments <span class="endpoint-count">7 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/commitments</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/commitments</span></div>
+          <div class="api-endpoint"><span class="api-method method-patch">PATCH</span><span class="api-path">/commitments/:id/status</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/commitments/export</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Ingresos / Revenues <span class="endpoint-count">7 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/revenues</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/revenues</span></div>
+          <div class="api-endpoint"><span class="api-method method-patch">PATCH</span><span class="api-path">/revenues/:id</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>RRHH <span class="endpoint-count">30+ endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/clock/check-in</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/clock/check-out</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/time-off/balance</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/timesheets/export/pdf</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Ticketing / Vivenu <span class="endpoint-count">22 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/ticketing/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/ticketing/events</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/ticketing/transactions</span></div>
+          <div class="api-endpoint"><span class="api-method method-patch">PATCH</span><span class="api-path">/ticketing/pricing/override</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Ticketmaster <span class="endpoint-count">12 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/ticketmaster/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/ticketmaster/transactions</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/ticketmaster/sync</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Treasury <span class="endpoint-count">8 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/treasury/weekly</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/treasury/kpis</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/treasury/sync/stripe</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Booking <span class="endpoint-count">8 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/booking/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/booking/cierres</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/booking/artistas</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/booking/export</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Cash Flow <span class="endpoint-count">19 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/cash-flow/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/cash-flow/banks</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/cash-flow/projection</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/cash-flow/entries</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Omnes / Analytics <span class="endpoint-count">16 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/omnes/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/omnes/bcg</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/omnes/abc-pareto</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/omnes/booking-simulator</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>F&B <span class="endpoint-count">15 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/fb/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/fb/evolution</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/fb/sales</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Equipment / Films <span class="endpoint-count">17 + 14 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/equipment/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/equipment/items</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/cargo/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/cargo/loads</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Marketing / Press / Social <span class="endpoint-count">13 + 7 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/press/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/social-content/calendar</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/graphic-lines/dashboard</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Artist Bios <span class="endpoint-count">8 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/artist-bios</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/artist-bios/:id/export/pdf</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/artist-bios/:id/export/docx</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Graphic Lines <span class="endpoint-count">11 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/graphic-lines</span></div>
+          <div class="api-endpoint"><span class="api-method method-patch">PATCH</span><span class="api-path">/graphic-lines/:id/status</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/graphic-lines/:id/pdf</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Service Requests <span class="endpoint-count">11 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/service-requests</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/service-requests/inbox</span></div>
+          <div class="api-endpoint"><span class="api-method method-patch">PATCH</span><span class="api-path">/service-requests/:id/status</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Production <span class="endpoint-count">11 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/production/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/production/contracts</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/production/daily-logs</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Devices <span class="endpoint-count">13 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/devices/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/devices</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/devices/:id/assign</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Executive Dashboard <span class="endpoint-count">5 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/executive/summary</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/executive/revenue</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/executive/profitability</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Propiedad <span class="endpoint-count">14 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/propiedad/dashboard</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/propiedad/artist-projections</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/propiedad/weekly-sales</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/propiedad/hoteles</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>IA / Clau <span class="endpoint-count">9 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/ai/chat</span></div>
+          <div class="api-endpoint"><span class="api-method method-post">POST</span><span class="api-path">/ai/chat-with-image</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/ai/conversations</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/ai/usage</span></div>
+        </div>
+      </details>
+    </div>
+    <div class="api-group" data-aos="fade-up">
+      <details>
+        <summary>Accounting Entries <span class="endpoint-count">6 endpoints</span></summary>
+        <div class="api-endpoints">
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/accounting/entries</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/accounting/summary</span></div>
+          <div class="api-endpoint"><span class="api-method method-get">GET</span><span class="api-path">/accounting/pnl</span></div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ INTEGRACIONES ============ -->
+  <section id="integraciones">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="plug" style="width:14px;height:14px;"></i> Ecosistema</div>
+      <h2 class="section-title">Integraciones <span class="gold">externas</span></h2>
+      <p class="section-subtitle">Conectado con las principales plataformas del sector entertainment y pagos.</p>
+    </div>
+    <div class="integrations-grid" data-aos="fade-up">
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="ticket" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">Vivenu</div>
+        <div class="integration-desc">Proxy ticketing completo</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="scan-line" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">Ticketmaster</div>
+        <div class="integration-desc">Sync ventas automático</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="credit-card" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">Stripe</div>
+        <div class="integration-desc">Pagos y cobros</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="brain" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">Claude AI</div>
+        <div class="integration-desc">Asistente IA con 20 tools</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="database" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">BD4/TETRA</div>
+        <div class="integration-desc">Contabilidad histórica</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="phone" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">Twilio</div>
+        <div class="integration-desc">SMS y WhatsApp</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="message-circle" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">WhatsApp</div>
+        <div class="integration-desc">Chat omnicanal</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="mic" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">Vapi.ai</div>
+        <div class="integration-desc">Agente de voz IA</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="audio-lines" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">ElevenLabs</div>
+        <div class="integration-desc">Síntesis de voz</div>
+      </div>
+      <div class="integration-card">
+        <div class="integration-icon"><i data-lucide="ear" style="width:24px;height:24px;"></i></div>
+        <div class="integration-name">Deepgram</div>
+        <div class="integration-desc">Transcripción de voz</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section id="tech">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="code-2" style="width:14px;height:14px;"></i> Tecnología</div>
+      <h2 class="section-title">Tech <span class="gold">Stack</span></h2>
+      <p class="section-subtitle">Tecnologías modernas, probadas en producción, mantenibles a largo plazo.</p>
+    </div>
+    <div class="tech-grid" data-aos="fade-up">
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-text);"><i data-lucide="layout" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">Next.js 14</div>
+        <div class="tech-card-role">Frontend</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-danger);"><i data-lucide="server" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">NestJS</div>
+        <div class="tech-card-role">Backend</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-info);"><i data-lucide="file-code-2" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">TypeScript</div>
+        <div class="tech-card-role">Lenguaje</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-info);"><i data-lucide="database" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">PostgreSQL 16</div>
+        <div class="tech-card-role">Base de datos</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-text);"><i data-lucide="layers" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">Prisma 5</div>
+        <div class="tech-card-role">ORM</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-info);"><i data-lucide="container" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">Docker</div>
+        <div class="tech-card-role">Contenedores</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-success);"><i data-lucide="shield" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">Nginx</div>
+        <div class="tech-card-role">Reverse Proxy</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-text);"><i data-lucide="git-branch" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">GitHub Actions</div>
+        <div class="tech-card-role">CI/CD</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-info);"><i data-lucide="palette" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">Tailwind CSS</div>
+        <div class="tech-card-role">Estilos</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-gold);"><i data-lucide="radio" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">Socket.io</div>
+        <div class="tech-card-role">Tiempo real</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-success);"><i data-lucide="image" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">Sharp</div>
+        <div class="tech-card-role">Imágenes</div>
+      </div>
+      <div class="tech-card">
+        <div class="tech-card-icon" style="color:var(--color-gold);"><i data-lucide="box" style="width:32px;height:32px;"></i></div>
+        <div class="tech-card-name">React Three Fiber</div>
+        <div class="tech-card-role">3D</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DATOS Y CIFRAS ============ -->
+  <section id="datos">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="hash" style="width:14px;height:14px;"></i> Métricas</div>
+      <h2 class="section-title">Datos y <span class="gold">cifras</span></h2>
+      <p class="section-subtitle">Números reales del sistema en producción.</p>
+    </div>
+    <div class="stats-grid" data-aos="fade-up">
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="39" data-format>0</span></div>
+        <div class="stat-label">Sprints completados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="926" data-format>0</span></div>
+        <div class="stat-label">Archivos TypeScript</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="134" data-format>0</span></div>
+        <div class="stat-label">Modelos de datos (Prisma)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="72" data-format>0</span></div>
+        <div class="stat-label">Módulos NestJS</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="6029" data-format>0</span></div>
+        <div class="stat-label">Líneas de schema</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="31872" data-format>0</span></div>
+        <div class="stat-label">Asientos contables (IFEMA)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="20915" data-format>0</span></div>
+        <div class="stat-label">Registros F&B</div>
+        <div class="stat-detail">42.89M EUR</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="548" data-format>0</span></div>
+        <div class="stat-label">Conciertos históricos</div>
+        <div class="stat-detail">2012-2025</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="644" data-format>0</span></div>
+        <div class="stat-label">Cierres de booking</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="2493" data-format>0</span></div>
+        <div class="stat-label">Reservas de hotel</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="1096" data-format>0</span></div>
+        <div class="stat-label">Equipos en almacén</div>
+        <div class="stat-detail">~1M EUR</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="3173" data-format>0</span></div>
+        <div class="stat-label">Transacciones Ticketmaster</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="152" data-format>0</span></div>
+        <div class="stat-label">Marcas patrocinadoras</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="705" data-format>0</span></div>
+        <div class="stat-label">Deals de patrocinio</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="210" data-format>0</span><span class="stat-unit">+</span></div>
+        <div class="stat-label">Proveedores registrados</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number"><span data-count="23" data-format>0</span></div>
+        <div class="stat-label">Departamentos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ROADMAP ============ -->
+  <section id="roadmap">
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-badge"><i data-lucide="milestone" style="width:14px;height:14px;"></i> Evolución</div>
+      <h2 class="section-title">Roadmap <span class="gold">del proyecto</span></h2>
+      <p class="section-subtitle">De la primera línea de código a una plataforma empresarial completa.</p>
+    </div>
+    <div class="timeline" data-aos="fade-up">
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Jun 2024</div>
+        <div class="timeline-title">Sprint 0-5: Fundamentos</div>
+        <div class="timeline-desc">Base del proyecto, Auth 2FA, Gastos, Ingresos, Proveedores.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Auth</span><span class="timeline-tag">Gastos</span><span class="timeline-tag">Ingresos</span><span class="timeline-tag">Proveedores</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Ago 2024</div>
+        <div class="timeline-title">Sprint 6-10: RRHH y Ticketing</div>
+        <div class="timeline-desc">RRHH completo, Fichajes RD 8/2019, Ausencias, Ticketing Vivenu.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">RRHH</span><span class="timeline-tag">Fichajes</span><span class="timeline-tag">Ausencias</span><span class="timeline-tag">Vivenu</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Oct 2024</div>
+        <div class="timeline-title">Sprint 11-15: Contabilidad y Analytics</div>
+        <div class="timeline-desc">Contabilidad BD4, Cash Flow, Booking, Omnes Analytics.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">BD4</span><span class="timeline-tag">Cash Flow</span><span class="timeline-tag">Booking</span><span class="timeline-tag">Omnes</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Dic 2024</div>
+        <div class="timeline-title">Sprint 16-20: Marketing y F&B</div>
+        <div class="timeline-desc">F&B, Marketing, Prensa, Línea Gráfica.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">F&B</span><span class="timeline-tag">Marketing</span><span class="timeline-tag">Prensa</span><span class="timeline-tag">Línea Gráfica</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Ene 2025</div>
+        <div class="timeline-title">Sprint 21-25: Equipment y Solicitudes</div>
+        <div class="timeline-desc">Equipment Films, Producción, Solicitudes Unificadas.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Equipment</span><span class="timeline-tag">Films</span><span class="timeline-tag">Producción</span><span class="timeline-tag">Solicitudes</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Mar 2025</div>
+        <div class="timeline-title">Sprint 26-30: Patrocinios y Dirección</div>
+        <div class="timeline-desc">Patrocinios, Propiedad, Executive Dashboard.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Patrocinios</span><span class="timeline-tag">Propiedad</span><span class="timeline-tag">Executive</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Jun 2025</div>
+        <div class="timeline-title">Sprint 32-34: IA y Ticketmaster</div>
+        <div class="timeline-desc">IA Clau con 20 tools, Ticketmaster sync automático.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Claude AI</span><span class="timeline-tag">20 Tools</span><span class="timeline-tag">Ticketmaster</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot completed"></div>
+        <div class="timeline-date">Feb 2026</div>
+        <div class="timeline-title">Sprint 39: Star Contigo</div>
+        <div class="timeline-desc">Atención al cliente omnicanal: Vapi.ai, WhatsApp, web chat.</div>
+        <div class="timeline-tags">
+          <span class="timeline-tag">Vapi.ai</span><span class="timeline-tag">WhatsApp</span><span class="timeline-tag">Twilio</span><span class="timeline-tag">Omnicanal</span>
+        </div>
+      </div>
+
+      <!-- Futuros -->
+      <div class="timeline-item">
+        <div class="timeline-dot future"></div>
+        <div class="timeline-date" style="color:var(--color-text-dim);">Q2 2026</div>
+        <div class="timeline-title" style="color:var(--color-text-muted);">WhatsApp Clau</div>
+        <div class="timeline-desc">IA por WhatsApp con Twilio.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot future"></div>
+        <div class="timeline-date" style="color:var(--color-text-dim);">Q3 2026</div>
+        <div class="timeline-title" style="color:var(--color-text-muted);">Sync Config</div>
+        <div class="timeline-desc">Configuración de sincronización entre plataformas.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot future"></div>
+        <div class="timeline-date" style="color:var(--color-text-dim);">Q4 2026</div>
+        <div class="timeline-title" style="color:var(--color-text-muted);">Mobile App</div>
+        <div class="timeline-desc">App nativa iOS/Android.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ LA TESIS ============ -->
+  <div class="tesis-section">
+    <section>
+      <div class="tesis-content" data-aos="fade-up">
+        <div class="tesis-border"></div>
+        <div class="tesis-quote">
+          <p>"Hace un par de años, un proyecto así habría requerido un equipo de <strong>10-15 personas</strong> y <strong>3 años de desarrollo</strong> mínimo."</p>
+          <p>"Hoy, gracias a cada uno de vosotros compartiendo vuestra información, vuestros procesos y vuestra confianza, he podido confirmar una tesis aplicada y probada: <strong>un nuevo modelo de desarrollo de software empresarial.</strong>"</p>
+          <p>"Gracias a Sandra por sacarme de mi rincón y darme la oportunidad de sacar mi verdadera creatividad fuera del diseño."</p>
+        </div>
+        <div class="tesis-author">— Duma</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">StarTeam.pro</div>
+      <div class="footer-badges">
+        <span class="footer-badge">NestJS</span>
+        <span class="footer-badge">Next.js</span>
+        <span class="footer-badge">TypeScript</span>
+        <span class="footer-badge">PostgreSQL</span>
+        <span class="footer-badge">Docker</span>
+        <span class="footer-badge">Prisma</span>
+      </div>
+      <div class="footer-copy">&copy; 2024-2026 StarTeam.pro — Desarrollado por Duma para Starlite Group</div>
+    </div>
+  </footer>
+
+  <!-- ============ SCROLL TO TOP ============ -->
+  <button class="scroll-top" aria-label="Volver arriba">
+    <i data-lucide="chevron-up" style="width:20px;height:20px;"></i>
+  </button>
+
+  <!-- ============ SCRIPTS ============ -->
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      offset: 80,
+      once: true,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+
+  <!-- Lucide Icons init -->
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
