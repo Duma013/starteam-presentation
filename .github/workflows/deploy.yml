@@ -30,18 +30,19 @@ jobs:
           node-version: '20'
 
       - name: Install StatiCrypt
-        run: npm install -g staticrypt
+        run: npm install -g staticrypt@3
 
       - name: Encrypt index.html
         run: |
           staticrypt index.html -p "${{ secrets.SITE_PASSWORD }}" \
-            --short \
             --template-title "StarTeam.pro" \
             --template-instructions "Introduce la contraseña para acceder" \
             --template-button "Acceder" \
             --template-color-primary "#D4A017" \
             --template-color-secondary "#0A0A0F" \
-            -o index.html
+            -d .
+          echo "--- Verificando encriptación ---"
+          head -c 200 index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
